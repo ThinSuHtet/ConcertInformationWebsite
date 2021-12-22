@@ -1,0 +1,40 @@
+body{
+        background-color:black;
+        background-repeat:repeat;
+     }
+#main{
+     font:500 25px cursive, Arial, sans-serif; 
+     
+ }
+a:hover{
+   background-color:#C0C0C0;
+}
+#head{background-image:url(head.jpg);
+      height:230px;
+      
+      }
+
+h2{background-image:url(transparent_light.png);
+     }
+#gg{background-image:url(transparent_light.png);
+   font-family: cursive, fantasy,monospace;
+   font-size: 25px;
+   font-style: normal;
+   font-variant: normal; 
+   font-weight: 500; 
+   text-align:left;
+}
+
+a{text-decoration:none;
+	color:black;
+	word-spacing:90px;
+               font-size:x-large;
+        }
+
+
+#logo{text-align:center;
+          font-family:Georgia,"Times New Roman",serif;}
+#foot{
+       text-align:center;
+       color:white;
+}

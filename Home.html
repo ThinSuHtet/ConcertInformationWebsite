@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Concert Information Webiste</title>
+<link href="home.css" rel="stylesheet"> 
+</head>
+<body>
+<div id="head">
+</div>
+<div id="main">
+<h2><font color="black">
+      <a href="Home.html">HOME</a> 
+      <a href="About.html">&nbsp;ABOUT</a>
+      <a href="Menu.html" >&nbsp;TOUR</a>  
+      <a href="Contact.html">&nbsp;CONTACT</a>
+      <a href="more.html">&nbsp;MORE</a></font>
+</h2>
+<center>
+<img id="aa" src="p1.jpg" width="1300" height="700"/>
+<div id="gg">
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In July 22-24 and 29-31, EXO held their third concert "EXO PLANET #3-The EXO'rDIUM" at the Olympic Park Gymnastic Stadium in Seoul, Korea.The Stadium has served as an important index for gauging the popularity of Korean artists as the biggest concert venue in South Korea where it seats up to 15,000, and all six-day concerts were sold out including the obstructed view seats.During the six days, 84,000 EXO-Ls (EXO fans) attended the concert while fans who failed purchasing tickets online set up tents at the Stadium for field sales. EXO entertained the audience for three hours and a half, performing 37 songs in total.</p>
+</div>
+
+<img src="social_b.png" width="300" height="50" />
+</center>
+</div>
+
+<script type="text/javascript">
+function randomPic()
+{
+var arr=["p1.jpg" , "p2.png","p3.jpg","p4.png","p5.png","p6.jpg","p7.jpg","p8.jpg","p9.jpg","p10.jpg","p11.jpg","p12.jpg","p13.jpg","p14.jpg"];
+var r=Math.floor(Math.random()*arr.length+0);
+var s=arr[r];
+var img=document.getElementById("aa");
+img.src=s;
+}
+setInterval("randomPic()",2000);
+</script>
+
+<div id="foot">
+<p>
+Copyright &copy; Thin Su Htet 
+</p>
+</div>
+
+
+
+</body>
+</html>

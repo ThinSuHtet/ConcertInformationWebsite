@@ -1,0 +1,24 @@
+body{
+        background-color:black;
+        background-repeat:repeat;
+     }
+#main{
+     font:500 25px cursive, Arial, sans-serif; 
+ }
+#head{background-image:url(head.jpg);
+      height:230px;
+      }
+h2{background-image:url(transparent_light.png);
+    }
+a{text-decoration:none;
+	color:black;
+	word-spacing:90px;
+               font-size:x-large;
+        }
+#foot{
+       text-align:center;
+}
+a:hover{
+   background-color:#C0C0C0;
+}
+p{color:white;}

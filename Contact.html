@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Concert Information Webiste</title>
+
+<link href="contact.css" rel="stylesheet"> 
+
+</head>
+<body>
+<div id="head">
+</div>
+<div id="main">
+<h2>
+      <a href="Home.html">HOME</a> 
+      <a href="About.html">&nbsp;ABOUT</a>
+      <a href="Tour.html" >&nbsp;TOUR</a>  
+      <a href="Contact.html">&nbsp;CONTACT</a>
+      <a href="More.html">&nbsp;MORE</a>
+</h2>
+</div>
+
+<div id="content">
+<h1 align="center">CONTACT</h1>
+<p>If you want more information about concert and idol's schedule,You have to register with your email to SMtown Entertainment.So you have to register below informations!!</p>
+
+<div id="info">
+<fieldset>
+<legend>Register to SMTown</legend>
+<form name="fanForm" id="fantId" action="fanInfo.html" method="post" onsubmit="registerFun( )">
+<table>
+<tr>
+    <td> Name </td>
+    <td> <input type="text" name="txtName" id="txtName" pattern="Mr|Ms\s[A-Z a-z]{2,}" placeholder="Mr | Ms Yoon Chan Kim" required> </td>
+</tr>
+<tr>
+    <td> Email </td>
+    <td> <input type="email" name="txtEmail" id="txtEmail" required> </td>
+</tr>
+<tr>
+    <td> Phone No</td>
+    <td> <input type="input" name="txtPhone" id="txtPhone" pattern="\d{2}-\d{7,}"  required> </td>
+</tr>
+<tr>
+    <td>Country </td>
+    <td> 
+          <select name="selCountry" id="selCountry">
+	<option value="Korea"> Korea </option>
+	<option value="Myanmar"> Myanmar</option>
+	<option value="China"> China </option>
+               <option value="Japan"> Japan </option>
+	<option value="North America"> North America</option>
+          </select>
+    </td>
+</tr>
+<tr>
+    <td> City </td>
+    <td> 
+          <select name="selCity" id="selCity">
+               <option value="Seoul"> Seoul</option>
+	<option value="Yangon"> Yangon </option>
+	<option value="Quindao"> Los Angle</option>
+	<option value="Tokyo"> Pi Kin </option>
+	<option value="Australia"> Australia</option>
+          </select>
+    </td>
+</tr>
+<tr align="center">
+    <td colspan="2"> <input type="submit" id="btn" value="Register"> </td>
+</table>
+</form>
+</fieldset>
+</div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+function registerFun( ){
+var n = document.getElementById("txtName").value;
+var e = document.getElementById("txtEmail").value;
+var ph = document.getElementById("txtPhone").value;
+
+var cc = document.getElementById("selCountry");
+var c=cc.options[cc.selectedIndex].value;
+
+var ci = document.getElementById("selCity");
+var cci=ci.options[ci.selectedIndex].value;
+
+
+sessionStorage.setItem("name",n);
+sessionStorage.setItem("email",e);
+sessionStorage.setItem("phone",ph);
+
+sessionStorage.setItem("country",c);
+sessionStorage.setItem("city",cci);
+
+
+}
+</script>
+
+<center><p><i>Fan? Drop a note!</i></p>
+<div class="wl">
+        <form>
+          <div id="dd">
+            
+              <input  placeholder="Name" required="" name="Name" type="text"><br/>
+            
+            
+              <input placeholder="Email" required="" name="Email" type="text"><br/>
+           
+          
+          <input placeholder="Message" required="" name="Message" type="text"><br/>
+          <button id="btn2" onclick="showInfo();">SEND</button>
+         </div>
+        </form>
+      </div>
+    
+</center>    
+<script>
+function showInfo(){alert("Your fan message is sent!Thank you for your note,Saranghae!");
+	};
+</script>
+<div id="foot">
+<p>
+Copyright &copy; Thin Su Htet 
+</p>
+</div>
+</body>
+</html>

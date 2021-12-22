@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Concert Information Webiste</title>
+
+<link href="contact.css" rel="stylesheet"> 
+
+</head>
+<body>
+<div id="head">
+</div>
+<div id="main">
+<h2>
+      <a href="Home.html">HOME</a> 
+      <a href="About.html">&nbsp;ABOUT</a>
+      <a href="Tour.html" >&nbsp;TOUR</a>  
+      <a href="Contact.html">&nbsp;CONTACT</a>
+      <a href="more.html">&nbsp;MORE</a>
+</h2>
+</div>
+<h4 align="center"><font color="white" size=5>Registration Info</font></h4>
+<div id="con">
+<div id="result" align="center">
+<script type="text/javascript">
+
+var name=sessionStorage.getItem("name");
+var email=sessionStorage.getItem("email");
+var phone=sessionStorage.getItem("phone");
+var country=sessionStorage.getItem("country");
+var city=sessionStorage.getItem("city");
+document.write("<table id='resultTable'> ");
+document.write ("<tr><td id='titleName'>Name </td><td> " + name + "</td></tr>");
+document.write ("<tr><td id='titleName'>Email </td><td> " + email + "</td></tr>");
+document.write ("<tr><td id='titleName'>Phone No</td><td> " +phone + "</td></tr>");
+document.write ("<tr><td id='titleName'>Address</td><td>" + city +  " , " + country + "</td></tr>");
+document.write("</table>");
+</script>     
+ </div>
+</div> <!-- end of content -->
+<p>
+Copyright &copy; Thin Su Htet 
+</p>
+</body>
+</html>

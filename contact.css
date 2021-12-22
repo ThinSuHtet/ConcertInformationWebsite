@@ -1,0 +1,51 @@
+body{
+        background-color:black;
+        background-repeat:repeat;
+     }
+#main{
+     font:500 25px cursive, Arial, sans-serif; 
+ }
+#head{background-image:url(head.jpg);
+      height:230px;
+      }
+h2{background-image:url(transparent_light.png);
+    }
+a{text-decoration:none;
+	color:black;
+	word-spacing:90px;
+               font-size:x-large;
+        }
+#foot{
+       text-align:center;
+}
+a:hover{
+   background-color:#C0C0C0;
+}
+h1{color:white;
+     font:400 cursive,monospace;
+     text-decoration:underline;
+}
+ i{color:white;
+   font: 30px cursive, Arial, sans-serif;
+}
+#info{font: 30px cursive, Arial, sans-serif;
+           color:white;
+           background-image:url(transparent_light.png);
+}
+
+#resultTable tr td{
+	padding:15px;
+	background-color:white;
+	color:black;
+	width:500px;
+	border-collapse:collapse;
+}
+
+#resultTable{
+	width:150px;
+	background-color:black;
+}
+p{color:white;
+   
+}
+#dd #wl{color:white;}
